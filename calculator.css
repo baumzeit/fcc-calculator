@@ -1,0 +1,92 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    background: rgb(98, 98, 165);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calculator {
+    background: rgb(72, 153, 146);
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 12px;
+  }
+  
+  .display {
+    text-align: right;
+    margin: 10px 10px;
+    padding: 4px 6px;
+    background: beige;
+    border-radius: 3px;
+    border: 1px solid rgb(63, 63, 63);
+    height: 50px;
+  }
+  
+  #result {
+    font-size: 24px;
+    margin: 3px 0px;
+  }
+  
+  #sequence {
+    font-size: 14px;
+  }
+  
+  .buttons-all {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(4, 45px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+  }
+  
+  .buttons-num {
+    height: 100%;
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    grid-gap: 5px;
+  }
+  
+  .op {
+    border-radius: 50px;
+    border: none;
+    height: 80%;
+    margin: 6px;
+    background-color: rgb(54, 54, 61);
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  
+  .clear {
+    border-radius: 10px;
+    border: none;
+    height: 60%;
+    background-color: rgb(252, 124, 124);
+  }
+  
+  .num {
+    border-radius: 3px;
+    border: none;
+    height: 100%;
+    background-color: rgb(209, 233, 255);
+  }
+  
+  .zero {
+    grid-column: 1 / 3;
+  }
+  
